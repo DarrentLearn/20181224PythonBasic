@@ -2,12 +2,12 @@
 import RPi.GPIO as IO
 from tkinter import *
 
+IO.setwarnings(False)
+IO.setmode(IO.BCM)
+
 from Relay import *     #匯入relay程式
 from ColorLED import *  #匯入彩色LED程式
 from Digit import *     #匯入數字按紐與7段顯示器程式
-
-IO.setwarnings(False)
-IO.setmode(IO.BCM)
 
 if __name__ == '__main__':
     form = Tk()                                     #新建表單視窗
